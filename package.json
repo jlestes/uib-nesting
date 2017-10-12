@@ -1,0 +1,14 @@
+{
+  "name": "uib-nesting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jon Estes <jlestes@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-ui-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1"
+  }
+}

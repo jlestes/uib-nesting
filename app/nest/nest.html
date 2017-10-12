@@ -1,0 +1,16 @@
+<uib-tabset active="$ctrl.selectedTab">
+    <uib-tab index="$index" ng-repeat="tab in $ctrl.tabs track by tab.name" heading="{{tab.name}}" disable="tab.disabled">
+        <uib-accordion close-others="oneAtATime">
+            <div uib-accordion-group class="panel-default" heading="" ng-repeat="accordion in tab.accordions track by accordion.name" is-open="accordion.open">
+                <uib-accordion-heading>
+                  <div>
+                    {{accordion.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': accordion.open, 'glyphicon-chevron-right': !accordion.open}"></i>
+                  </div>
+                  </uib-accordion-heading>  
+              Accordion {{$index}}
+            </div>
+        </uib-accordion>
+    </uib-tab>
+</uib-tabset>
+
+<p>{{$ctrl.selectedTab}}</p>
